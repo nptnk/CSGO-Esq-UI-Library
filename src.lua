@@ -613,7 +613,7 @@ function Library:CreateWindow(title, color)
                 title_15.Position = UDim2.new(0, 10, 0, 51)
                 title_15.Size = UDim2.new(0, 234, 0, 37)
                 if name == "" or name == nil then
-                    title_15.Size = UDim2.new(0, 234, 0, 0)
+                    title_15.Size = UDim2.new(0, 234, 0, 15)
                 end
                 title_15.ZIndex = 0
                 title_15.Font = Enum.Font.SourceSans
@@ -630,6 +630,9 @@ function Library:CreateWindow(title, color)
                 slider.BorderColor3 = Color3.fromRGB(8, 8, 8)
                 slider.Position = UDim2.new(0, 0, 0, 22)
                 slider.Size = UDim2.new(0, 234, 0, 15)
+                if name == "" or name == nil then
+                    slider.Position = UDim2.new(0, 0, 0, 0)
+                end
                 
                 UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(167, 167, 167))}
                 UIGradient_15.Rotation = 90
